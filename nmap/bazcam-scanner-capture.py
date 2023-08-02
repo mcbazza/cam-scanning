@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"" A Python script to poll the IP of a Hipcam-like IP Cam and capture an image.
+""" A Python script to poll the IP of a Hipcam-like IP Cam and capture an image.
 
 Script : bazcam-scanner-capture.py
 Author : Bazza
