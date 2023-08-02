@@ -38,7 +38,7 @@ pip3 install -r requirements.txt
 ### How to use the Nmap script in association with the Python script
 For this example there is an Hipcam-based IP Camera on `192,168.1.150` where video is being exposed without authentication on `554/tcp`.
 
-The required `bazcam-scanner-capture.py` file is saved to: `/home/bazza/bazcam-scanner,images=/`
+The required `bazcam-scanner-capture.py` file is saved to: `/home/bazza/bazcam-scanner`
 
 The captured image is to be saved to: `/home/bazza/bazcam-scanner/` \
 A captured image filename, for this capture, would be: `192.168.1.150-554.jpg`
