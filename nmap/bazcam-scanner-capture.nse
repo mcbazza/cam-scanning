@@ -53,6 +53,10 @@ action = function(host, port)
   helper:close()
   if ( status ) then
     -- Spawn process to grab image from the IP
+
+    -- This one uses an & to run the command and spawn/detach. Not had great success with this method.
+    -- os.execute("cd " .. scriptdir .. " ; . env/bin/activate ; python3 bazcam-scanner-capture.py -i " .. host.ip .. " -d " .. imagedir ..' &')
+    -- This one runs in syncronously (waits for process to complete)
     os.execute("cd " .. scriptdir .. " ; . env/bin/activate ; python3 bazcam-scanner-capture.py -i " .. host.ip .. " -d " .. imagedir ..' &')
 
     local opts = response.headers['Public']
